@@ -6,7 +6,6 @@ pipeline {
             steps {
                 // Get some code from a GitHub repository
                 git branch: 'main', url: 'https://jenkins-example-public-PAT@github.com/alaguraja-usili/jenkins-maven-jenkinsfile.git'
-'
 
                 // Run Maven on a Unix agent.
                 //sh "mvn -Dmaven.test.failure.ignore=true clean package"
